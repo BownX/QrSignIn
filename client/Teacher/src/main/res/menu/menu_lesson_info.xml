@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+  <item
+      android:id="@+id/action_qr"
+      android:title="开始签到"
+      android:orderInCategory="100"
+      app:showAsAction="always"/>
+  <item
+      android:id="@+id/action_signin_list"
+      android:title="出勤情况"
+      android:orderInCategory="100"
+      app:showAsAction="always"/>
+</menu>
