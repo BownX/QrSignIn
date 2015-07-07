@@ -33,7 +33,6 @@ func welcome(ctx *Context) string {
 	return "welcome to QrSignIn System"
 }
 
-// 学生注册，需要姓名、手机识别码、学号、专业
 func registerStudent(ctx *Context) string {
 	name, nameOk := ctx.Params["name"]
 	imei, imeiOk := ctx.Params["imei"]
@@ -115,7 +114,6 @@ func addCourseStudent(ctx *Context) string {
 		cid := string2int(courseId)
 		course := db.Course{Id: int(cid)}
 		err := db.Db.Read(&course)
-		// 如果没找着这门课
 		if err != nil {
 			return buildResponse(CODE_ERROR, MSG_NO_COURSE)
 		}
