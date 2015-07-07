@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/BownX/QrSignIn/web"
+	"github.com/BownX/QrSignIn/server/web"
 )
 
 const (
@@ -9,6 +9,5 @@ const (
 )
 
 func main() {
-	// 启动QrSignin服务端
 	web.Run(SERVER_PORT, web.GetUrlMappings())
 }

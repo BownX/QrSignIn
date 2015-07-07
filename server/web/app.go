@@ -2,7 +2,7 @@ package web
 
 import (
 	"encoding/json"
-	"github.com/BownX/QrSignIn/db"
+	"github.com/BownX/QrSignIn/server/db"
 	"log"
 	"strconv"
 )
