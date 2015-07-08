@@ -8,7 +8,7 @@ type Course struct {
 	Id       int        `orm:"pk;auto" json:"id"`
 	Title    string     `json:"title"`
 	Teacher  string     `json:"teacher"`
-	Students []*Student `orm:"rel(m2m);rel_through(bown.xyz/QrSignIn/db.CourseStudentRel)" json:"students"` // rel_through多对一关系
+	Students []*Student `orm:"rel(m2m);rel_through(github.com/BownX/QrSignIn/server/db.CourseStudentRel)" json:"students"`
 	Lessons  []*Lesson  `orm:"reverse(many)" json:"lessons"`
 }
 
