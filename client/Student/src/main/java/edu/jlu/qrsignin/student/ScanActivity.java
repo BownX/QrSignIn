@@ -134,13 +134,11 @@ public class ScanActivity extends Activity {
       @Override
       public void onClick(View v) {
         if (camera != null) {
-          // 点击相机的时候自动对焦
           camera.autoFocus(null);
         }
       }
     });
     captureSize = getResources().getDimensionPixelSize(R.dimen.capture_area_size);
-    // 创建一个相机成像的展示区域
     SurfaceHolder holder = cameraView.getHolder();
     holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
     holder.addCallback(callback);
