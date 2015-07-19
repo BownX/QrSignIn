@@ -12,7 +12,7 @@ public class Const {
 
   public static final String PREF_NAME = "qrsignin";
 
-  public static final String HOST_ADDR = "http://192.168.1.106:9090";
+  public static final String HOST_ADDR = "http://qrsignin.bown.xyz";
 
   public static void init(Context context) {
     preference = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);

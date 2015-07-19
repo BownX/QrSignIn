@@ -1,7 +1,7 @@
 package edu.jlu.qrsignin.teacher.models;
 
 /**
- * @author xubowen@wandoujia.com
+ * @author xubowen92@gmail.com
  */
 public class Course {
 

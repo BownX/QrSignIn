@@ -27,7 +27,6 @@ public class QrApplication extends Application {
   }
 
   public RequestQueue getRequestQueue() {
-    // 创建一个RequestQueue用于网络通讯
     return requestQueue;
   }
 }
